@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .actor {
+            position: relative;
+            display: inline-block;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+        }
+
+        .arrow {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 10px;
+        }
+
+        .arrow-right {
+            border-color: transparent transparent transparent #333;
+            top: 50%;
+            left: 100%;
+            margin-top: -10px;
+            margin-left: -1px; /* Adjust as needed */
+        }
+
+        .arrow-left {
+            border-color: transparent #333 transparent transparent;
+            top: 50%;
+            left: 0;
+            margin-top: -10px;
+            margin-right: -1px; /* Adjust as needed */
+        }
+    </style>
+</head>
+<body>
+
+<div class="actor">User</div>
+<div class="arrow arrow-right"></div>
+<div class="actor">Game</div>
+<div class="arrow arrow-right"></div>
+<div class="actor">HighScore</div>
+
+<!-- Add more actors and arrows as needed -->
+<!-- Example:
+<div class="arrow arrow-right"></div>
+<div class="actor">AnotherActor</div>
+-->
+
+</body>
+</html>
