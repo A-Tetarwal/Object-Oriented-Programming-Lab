@@ -12,7 +12,7 @@ class Arrays {
 
     }
 
-    void multiArrays(){
+    void multiDimArrays(){
         int[][][] matrix = {{{1,2,3}, {2,3,4}}, {{3,4,5}, {4,5,6}}};
         for(int i = 0; i < matrix.length; i++){
             for(int j = 0; j < matrix[i].length; j++){
@@ -86,7 +86,7 @@ class Arrays {
     public static void main(String[] args) {
         Arrays d1=new Arrays();
         d1.demoArrays();
-        d1.multiArrays();
+        d1.multiDimArrays();
         System.out.println();
         d1.threex();
         System.out.println();
@@ -95,5 +95,10 @@ class Arrays {
         d1.Q1();
         d1.Q2();
         System.out.println(d1.Q3());
+    }
+
+    public static int[] copyOf(int[] array1, int length) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'copyOf'");
     }
 }
